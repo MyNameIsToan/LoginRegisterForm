@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="ButtonArea">
+            <button class="RedirectButton" id="RedirectButton" onclick="myFunction()">SIGN UP</button>
+        </div>
+        <div class="FormArea1" id="FormArea1">
+            <div class="FormArea2">
+                <h1>Sign in Form</h1>
+                <form>
+                    <input class="Username_Login"type="text" placeholder="Username">
+                    <input class="Password_Login" type="password" placeholder="Password">
+                    <input class="Submit_Login" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <div class="FormArea3" id="FormArea3">
+            <h1>Sign up Form</h1>
+            <form>
+                <input class="RegForm Username_Reg"type="text" placeholder="Username">
+                <input class="RegForm Password_Reg" type="password" placeholder="Password">
+                <input class="RegForm Email_Reg"type="email" placeholder="Email">
+                <input class="RegForm FirstName_Reg"type="text" placeholder="Firstname">
+                <input class="RegForm LastName_Reg"type="text" placeholder="Lastname">
+                <input class="Submit_Login" type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("FormArea3");
+        var y = document.getElementById("RedirectButton");
+            if (x.style.display === "none") {
+                 x.style.display = "block";
+                 y.innerHTML = "SIGN IN";
+            } else {
+                x.style.display = "none";
+                y.innerHTML = "SIGN UP";
+            }
+        }
+        </script>
+</body>
+</html>
